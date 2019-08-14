@@ -132,7 +132,7 @@ If you like, you can [**prepare the environment step by step**](https://github.c
 
 ### 2. How to train the model
 
-#### 2.1 Download the pretrained models
+#### 2.1 Download the pretrained models and place them like the section 1.2
 
 **For MPII dataset**:  [[GoogleDrive]](https://drive.google.com/open?id=1jxL-O5TowVRCZ_xjO-PcmS7juZTYe74T) [[BaiduDrive]](https://pan.baidu.com/s/1Mm1E1G1pYDJVBW2MJTQAUw)
 
