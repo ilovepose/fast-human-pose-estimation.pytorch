@@ -71,6 +71,48 @@ The code is developed using python 3.5 on Ubuntu 16.04. NVIDIA GPUs are needed. 
 
 ### 1. Preparation
 
+#### 1.1 Prepare the dataset
+For the MPII dataset, your directory tree should look like this:   
+```
+$HOME/datasets/MPII
+├── images
+└── mpii_human_pose_v1_u12_1.mat
+```
+For the COCO dataset, your directory tree should look like this:   
+```
+$HOME/datasets/MSCOCO
+├── annotations
+├── images
+│   ├── test2017
+│   ├── train2017
+│   └── val2017
+└── person_detection_results
+````
+
+### 1.2 Prepare the pretrained models
+Your directory tree should look like this:  
+```
+$HOME/datasets/models
+├── pytorch
+│   ├── imagenet
+│   │   ├── hrnet_w32-36af842e.pth
+│   │   ├── hrnet_w48-8ef0771d.pth
+│   │   └── resnet50-19c8e357.pth
+│   ├── pose_coco
+│   │   ├── pose_hrnet_w32_256x192.pth
+│   │   └── pose_hrnet_w48_256x192.pth
+│   └── pose_mpii
+│       ├── bs4_hourglass_128_4_1_16_0.00025_0_140_87.934_model_best.pth
+│       ├── bs4_hourglass_256_8_1_16_0.00025_0_140_90.520_model_best.pth
+│       ├── pose_hrnet_w32_256x256.pth
+│       └── pose_hrnet_w48_256x256.pth
+└── student_FPD
+    ├── hourglass_student_FPD*.pth
+    ├── hourglass_student_FPD.pth
+    └── pose_hrnet_w32_student_FPD.pth
+```
+
+### 1.3 Prepare the environment
 Setting the parameters in the file `prepare_env.sh` as follows:
 
 ```bash
