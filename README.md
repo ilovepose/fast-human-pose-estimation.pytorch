@@ -147,33 +147,12 @@ HRNet-W32 student FPD model
 
 **Note:**
 
-- coco_hrnet_w48_kd_w32_256x256: pose_hrnet_w32_student_FPD model training resutls.
+- coco_hrnet_w48_fpd_w32_256x256: pose_hrnet_w32_student_FPD model training resutls.
 
-- mpii_hourglass_8_256_kd_hg_4_128_not_pretrained: hourglass_student_FPD\* model training resutls.
+- mpii_hourglass_8_256_fpd_hg_4_128_not_pretrained: hourglass_student_FPD\* model training resutls.
 
-- mpii_hourglass_8_256_kd_hg_4_128_pretrained: hourglass_student_FPD model training resutls.
+- mpii_hourglass_8_256_fpd_hg_4_128_pretrained: hourglass_student_FPD model training resutls.
 
-<!--([GoogleDrive](https://drive.google.com/open?id=1MdXTveygN3Y64SRYiM_Smjml_UNPssc2))-->
-<!--- pose_coco: COCO HRNet models-->
-<!--- pose_mpii: MPII HRNet and Hourglass models-->
-<!--- imagenet: pretrained models-->
-<!--- bs4_hourglass_128_4_1_16_0.00025_0_140_87.934_model_best.pth means-->
-<!--Its name convention is as follows:-->
-<!--```bash-->
-<!--batch size:4-->
-<!--hourglass NUM_FEATURES: 256-->
-<!--hourglass NUM_STACKS: 4-->
-<!--hourglass NUM_BLOCKS: 1-->
-<!--learn rate: 2.5e-4-->
-<!--start epoch: 0-->
-<!--end epoch: 140-->
-<!--valid set PCKh@0.5: 87.934-->
-<!--model checkpoint state: model_best-->
-<!--```-->
-<!--#### FPD Training Model experiments' results([GoogleDrive](https://drive.google.com/open?id=1FJcXP_V9IQb_sRc3bc1Kjd82OCzSJ_-n))-->
-<!--- coco_hrnet_w48_kd_w32_256x256: HRNET w48 KD HRNET w32-->
-<!--- mpii_hourglass_8_256_kd_hg_4_128_not_pretrained: fpd paper kd but not using pretrained models-->
-<!--- mpii_hourglass_8_256_kd_hg_4_128_pretrained: fpd paper kd results-->
 
 ### Citation
 
@@ -189,6 +168,10 @@ year = {2019}
 }
 ```
 
-## Reference
+### Discussion forum
+[ILovePose](http://www.ilovepose.cn:9100)
 
+
+## Acknowledgement
+Thanks for the open-source HRNet
 * [Deep High-Resolution Representation Learning for Human Pose Estimation, Sun, Ke and Xiao, Bin and Liu, Dong and Wang, Jingdong](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch/)
