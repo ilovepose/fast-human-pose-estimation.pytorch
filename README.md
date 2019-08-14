@@ -171,7 +171,7 @@ year = {2019}
 ### Discussion forum
 [ILovePose](http://www.ilovepose.cn:9100)
 
-## Unoffical implemention
+## Unoffical implementations
 [Fast_Human_Pose_Estimation_Pytorch](https://github.com/yuanyuanli85/Fast_Human_Pose_Estimation_Pytorch)
 
 ## Acknowledgement
