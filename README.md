@@ -14,12 +14,12 @@ In our paper
 The results on the MPII dataset demonstrate the effectiveness of our approach. We re-implemented the FPD using the HRNet codebase and provided extra evaluation on the COCO dataset.  Our method (FPD) can work without ground-truth labels, it can utilize unlabeled images. 
 ![Illustrating the architecture of the proposed HRNet](/figures/pose_kd.jpg)
 
-**For the MPII dataset**
+**For the MPII dataset**  
 1. We first trained a teacher model (hourglass model, stacks=8, num_features=256, 90.520@MPII PCKh@0.5) and a student model (hourglass model, stacks=4, num_features=128, 89.040@MPII PCKh@0.5).
 2. We then used the teacher model's prediction and the ground-truth label to co-supervisie the student model (hourglass model, stacks=4, num_features=128, 87.934@MPII PCKh@0.5).
 3. Our experiment shows **1.106%** gain from FPD.
 
-**For the COCO dataset**
+**For the COCO dataset**  
 
 1. We first trained a teacher model (HRNet-W48, input size=256x192, 75.0@COCO-Valid-Set AP) and a student model (HRNet-W32, input size=256x192, 74.4@COCO-Valid-Set AP).
 2. We then used the teacher model's prediction and the ground-truth label to co-supervisie the student model (HRNet-W32, input size=256x192, 75.1@COCO-Valid-Set AP).
@@ -171,7 +171,7 @@ bash run_train_resnet.sh # using resnet model
 
 ### 3. How to test the model
 
-#### 3.1 Download the trained student models
+#### 3.1 Download the trained student models and place the like section 1.2
 
 [[GoogleDrive]](https://drive.google.com/open?id=1LRn-yEluOg4l4xjeUkslyOXYh8ljeSwP) [[BaiduDrive]](https://pan.baidu.com/s/1Mm1E1G1pYDJVBW2MJTQAUw)
 
