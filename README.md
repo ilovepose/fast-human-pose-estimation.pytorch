@@ -171,7 +171,7 @@ bash run_train_resnet.sh # using resnet model
 
 ### 3. How to test the model
 
-#### 3.1 Download the trained student models and place the like section 1.2
+#### 3.1 Download the trained student models and place them like section 1.2
 
 [[GoogleDrive]](https://drive.google.com/open?id=1LRn-yEluOg4l4xjeUkslyOXYh8ljeSwP) [[BaiduDrive]](https://pan.baidu.com/s/1Mm1E1G1pYDJVBW2MJTQAUw)
 
