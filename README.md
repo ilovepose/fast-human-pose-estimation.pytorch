@@ -45,7 +45,7 @@ The results on the MPII dataset demonstrate the effectiveness of our approach. W
 - hourglass_student_FPD\* means not using pretrained students.
 - Not using multi-scale test.
 - Batch size is 4.
-- The PCKh metric implemented in the HRNet codebase for MPII dataset is slightly different than that in our paper.
+- The PCKh metric implemented in the HRNet codebase for MPII dataset is slightly different from that in our paper.
 - The performance of hourglass implemented using pytorch is lower than that implemented using torch(paper).
 
 ### Results on COCO val2017 with detector having human AP of 56.4 on COCO val2017 dataset
