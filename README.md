@@ -72,15 +72,26 @@ The code is developed using python 3.5 on Ubuntu 16.04. NVIDIA GPUs are needed. 
 ### 1. Preparation
 
 #### 1.1 Prepare the dataset
-For the MPII dataset, your directory tree should look like this:   
+For the MPII dataset, the original annotation files are in matlab format. We have converted them into json format, you also need to download them from [OneDrive](https://1drv.ms/f/s!AhIXJn_J-blW00SqrairNetmeVu4) or [GoogleDrive](https://drive.google.com/drive/folders/1En_VqmStnsXMdldXA6qpqEyDQulnmS3a?usp=sharing).
+Extract them under `{POSE_ROOT}/data`, your directory tree should look like this:   
 ```
-$HOME/datasets/MPII
+${POSE_ROOT}/data/mpii
 ├── images
 └── mpii_human_pose_v1_u12_1.mat
+|—— annot
+|   |—— gt_valid.mat
+└── |—— test.json
+    |   |—— train.json
+    |   |—— trainval.json
+    |   |—— valid.json
+    └── images
+        |—— 000001163.jpg
+        |—— 000003072.jpg
 ```
+
 For the COCO dataset, your directory tree should look like this:   
 ```
-$HOME/datasets/MSCOCO
+${POSE_ROOT}/data/coco
 ├── annotations
 ├── images
 │   ├── test2017
@@ -92,7 +103,7 @@ $HOME/datasets/MSCOCO
 ### 1.2 Prepare the pretrained models
 Your directory tree should look like this:  
 ```
-$HOME/datasets/models
+$HOME/models
 ├── pytorch
 │   ├── imagenet
 │   │   ├── hrnet_w32-36af842e.pth
