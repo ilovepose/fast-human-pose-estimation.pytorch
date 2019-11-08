@@ -27,7 +27,7 @@ python tools/fpd_train.py \
     TRAIN.BEGIN_EPOCH 0 \
     TRAIN.END_EPOCH 140 \
     TRAIN.LR 0.00025 \
-    TRAIN.CHECKPOINT 'models/pytorch/pose_mpii/hourglass/bs4_hourglass_128_4_1_16_0.00025_0_140_87.934_model_best.pth' `#models/pytorch/pose_mpii/pose_hrnet_w32_256x256.pth` \
+    TRAIN.CHECKPOINT 'models/pytorch/pose_mpii/bs4_hourglass_128_4_1_16_0.00025_0_140_87.934_model_best.pth' `#models/pytorch/pose_mpii/pose_hrnet_w32_256x256.pth` \
     TEST.BATCH_SIZE_PER_GPU 32 \
     DEBUG.DEBUG False \
     KD.TRAIN_TYPE 'FPD' `#FPD`\
