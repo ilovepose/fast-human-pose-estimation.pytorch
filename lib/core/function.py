@@ -8,7 +8,7 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
- 
+
 import time
 import logging
 import os
@@ -50,6 +50,7 @@ def train(config, train_loader, model, criterion, optimizer, epoch,
             loss = criterion(outputs[0], target, target_weight)
             for output in outputs[1:]:
                 loss += criterion(output, target, target_weight)
+            output = outputs[-1]
         else:
             output = outputs
             loss = criterion(output, target, target_weight)
@@ -167,7 +168,7 @@ def fpd_train(config, train_loader, model, tmodel, pose_criterion, kd_pose_crite
                   'Loss {loss.val:.5f} ({loss.avg:.5f})\t' \
                   'Accuracy {acc.val:.3f} ({acc.avg:.3f})'.format(
                       epoch, i, len(train_loader), batch_time=batch_time,
-                      speed=input.size(0)/batch_time.val,data_time=data_time, 
+                      speed=input.size(0)/batch_time.val,data_time=data_time,
                       pose_loss=pose_losses, kd_pose_loss=kd_pose_losses, loss=losses,
                       acc=acc)
             logger.info(msg)
