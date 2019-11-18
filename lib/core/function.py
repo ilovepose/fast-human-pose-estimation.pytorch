@@ -132,6 +132,7 @@ def fpd_train(config, train_loader, model, tmodel, pose_criterion, kd_pose_crite
                 pose_loss += pose_criterion(output, target, target_weight)
                 kd_pose_loss += kd_pose_criterion(output, toutput, target_weight)
             loss = (1 - kd_weight_alpha) * pose_loss + kd_weight_alpha * kd_pose_loss
+            output = outputs[-1]
         else:
             output = outputs
             pose_loss = pose_criterion(output, target, target_weight)
