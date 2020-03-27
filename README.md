@@ -206,6 +206,18 @@ HRNet-W32 student FPD model
 
 - mpii_hourglass_8_256_fpd_hg_4_128_pretrained: hourglass_student_FPD model training resutls.
 
+#### 3.3 Inference on video
+
+```bash
+cd tools
+# pose_hrnet_w32_student_FPD model
+python inference.py --cfg ../experiments/coco/hrnet/w32_256x192_adam_lr1e-3.yaml \
+    --videoFile ../../multi_people.mp4 \
+    --inferenceFps 10 --writeBoxFrames \
+    --outputDir output TEST.MODEL_FILE ../models/student_FPD/pose_hrnet_w32_student_FPD.pth
+
+# hourglass_student_FPD.pth : missing network definition
+```
 
 ### Citation
 
