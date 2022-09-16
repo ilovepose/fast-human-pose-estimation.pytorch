@@ -36,6 +36,7 @@ _C.CUDNN.ENABLED = True
 # common params for NETWORK
 _C.MODEL = CN()
 _C.MODEL.NAME = 'pose_hrnet'
+_C.MODEL.NAME2 = 'hourglass'
 _C.MODEL.INIT_WEIGHTS = True
 _C.MODEL.PRETRAINED = ''
 _C.MODEL.NUM_JOINTS = 17
@@ -52,6 +53,8 @@ _C.LOSS.USE_OHKM = False
 _C.LOSS.TOPK = 8
 _C.LOSS.USE_TARGET_WEIGHT = True
 _C.LOSS.USE_DIFFERENT_JOINTS_WEIGHT = False
+_C.LOSS.BETA = 1.0
+_C.LOSS.COARSE_TO_FINE = False
 
 # DATASET related params
 _C.DATASET = CN()
@@ -124,6 +127,7 @@ _C.KD = CN()
 _C.KD.TRAIN_TYPE = 'NORMAL' # 'FPD'(fpd)/'NORMAL'(not kd)
 _C.KD.TEACHER = '' # teacher model
 _C.KD.ALPHA = 0.5 # kd weight
+_C.KD.VALID_TYPE = 'hm'
 
 # debug
 _C.DEBUG = CN()
